@@ -11,7 +11,6 @@ import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
 public class Playingcontroller {
-
     private boolean isExtended = false;
     public Rectangle nextplatform;
     public Rectangle platform;

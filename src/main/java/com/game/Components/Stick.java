@@ -1,17 +1,22 @@
 package com.game.Components;
 
-import javafx.scene.shape.Line;
-
-public class Stick extends Line {
-
-    public Stick(double startX, double startY, double endX, double endY) {
-        super(startX, startY, endX, endY);
-    }
+public class Stick extends GameObject {
 
     public Stick() {
     }
 
+    public Stick(double x, double y) {
+        super(x, y);
+    }
 
     public void extend(double amount) {
+    }
+
+    public double getHeight() {
+        return y;
+    }
+
+    public void setHeight(double v) {
+        this.y=v;
     }
 }

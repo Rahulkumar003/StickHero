@@ -23,7 +23,7 @@ public class HelloApplication extends Application {
         stage.show();
 
         // 4-second delay before  main menu
-        PauseTransition delay = new PauseTransition(Duration.seconds(3));
+        PauseTransition delay = new PauseTransition(Duration.seconds(1));
         delay.setOnFinished(event -> loadMainMenu(stage));
         delay.play();
     }
