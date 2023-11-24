@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="342.0" layoutX="-4.0">
+         <image>
+            <Image url="@../../IMG/bg3.jpeg" /><!--from internet-->
+
+         </image>
+      </ImageView>
+      <Label id="menu_text" alignment="CENTER" contentDisplay="BOTTOM" graphicTextGap="8.0" layoutX="4.0" layoutY="54.0" prefHeight="174.0" prefWidth="335.0" text="STICK HERO" textAlignment="RIGHT" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Book Antique" size="50.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="117.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Button fx:id="playbutton" layoutX="112.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#playgame" prefHeight="82.0" prefWidth="110.0" text="PLAY">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <style>
+            -fx-background-color: red;
+            -fx-text-fill: white; /* Set text color to white for better visibility on red background */
+            -fx-shape: "M10 0 L20 10 L10 20 L0 10 Z"; /* Circular shape path */
+            -fx-padding: 10;
+         </style>
+      </Button>
+      <ImageView fx:id="stickman" fitHeight="52.0" fitWidth="33.0" layoutX="151.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../IMG/stickman2.png" /><!--inspiration from internet-->
+         </image></ImageView>
+      <ImageView fx:id="exitbutton" fitHeight="50.0" fitWidth="50.0" layoutX="271.0" layoutY="14.0" onMouseClicked="#gotoreplaymenu">
+         <image>
+            <Image url="@../../IMG/1723876.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
