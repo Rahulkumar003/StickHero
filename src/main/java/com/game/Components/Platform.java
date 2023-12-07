@@ -4,7 +4,14 @@ import com.game.StickHero;
 
 import java.util.List;
 
-public class Platform extends GameObject {
+import javafx.scene.shape.Rectangle;
+
+public class Platform extends Rectangle {
+
+    public Platform(double width, double height) {
+        super(width, height);
+    }
+
     private Platform nextPlatform;
     private List<Platform> connectedPlatforms;
 
