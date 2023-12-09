@@ -4,33 +4,35 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keypressed" onKeyReleased="#keyReleased" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.Playingcontroller">
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keypressed" onKeyReleased="#keyReleased" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.PlayingController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="342.0" layoutX="-4.0">
          <image>
             <Image url="@../../IMG/bg3.jpeg" />
          </image>
       </ImageView>
-      <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="118.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
-      <ImageView fx:id="stickman" fitHeight="52.0" fitWidth="33.0" layoutX="152.0" layoutY="349.0" pickOnBounds="false" preserveRatio="true">
+      <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <ImageView fx:id="stickman" fitHeight="52.0" fitWidth="33.0" layoutX="67.0" layoutY="349.0"  preserveRatio="true">
          <image>
             <Image url="@../../IMG/stickman2.png" />
          </image>
       </ImageView>
-      <Label layoutX="70.0" layoutY="47.0" prefHeight="43.0" prefWidth="201.0" text="Hold mouse on screen">
+      <Label layoutX="83.0" layoutY="21.0" prefHeight="43.0" prefWidth="201.0" text="Hold Ctrl  to stretch">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="76.0" layoutY="90.0" text=" to stretch out the stick">
+      <Label layoutX="132.0" layoutY="64.0" text=" the stick">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Rectangle fx:id="nextplatform" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="290.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE" width="31.0" />
-      <Rectangle fx:id="stick" arcHeight="5.0" arcWidth="5.0" fill="BLACK"  layoutX="210.0" layoutY="400.0" width="7.0" />
+      <Rectangle fx:id="nextplatform" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="228.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+      <Rectangle fx:id="nextplatform1" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="338.0" layoutY="401.0" stroke="BLACK" strokeType="INSIDE" width="87.0" />
+      <Line fx:id="stick" endX="5.199974060058594" layoutX="96.0" layoutY="400.0" startX="5.199974060058594" strokeWidth="4.0" />
    </children>
 </Pane>
