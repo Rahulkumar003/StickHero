@@ -64,7 +64,7 @@ public class PlayingController {
     private void keyReleased(KeyEvent event) {
         if (event.getCode() == KeyCode.CONTROL) {
             extendTimeline.stop();
-            System.out.println("stick endX: " + stick.getEndY());
+//            System.out.println("stick endX: " + stick.getEndY());
             System.out.println("Stop extending");
             stickEndX = stick.getEndX();
             if (!isRotated) {
@@ -143,7 +143,7 @@ public class PlayingController {
     }
 
     private void checkLanding() {
-        double stickmanEndX = stickman.getTranslateX()+stickman.getFitWidth()+platform.getWidth() ;
+        double stickmanEndX = stickman.getTranslateX()+platform.getWidth() ;
 
         double nextPlatformStartX = nextplatform.getLayoutX();
         double nextPlatformEndX = nextPlatformStartX + nextplatform.getWidth();
@@ -152,7 +152,7 @@ public class PlayingController {
 //        System.out.println("nextPlatformEndX: " + nextPlatformEndX);
 //        System.out.println("nextPlatformStartX: " + nextPlatformStartX);
 
-        if (stickmanEndX > nextPlatformStartX && stickman.getLayoutX() < nextPlatformEndX) {
+        if (stickmanEndX > nextPlatformStartX && stickmanEndX< nextPlatformEndX) {
             System.out.println("Stickman is between the next platform, move to the next platform's end");
             playerLandOnNext();
         } else {
@@ -176,7 +176,7 @@ public class PlayingController {
 
     private void playerLandOnNext() {
         double moveDuration = 100; // Adjust the duration as needed
-        double nextPlatformEndX = platform.getLayoutX() + platform.getWidth();
+        double nextPlatformEndX = nextplatform.getLayoutX() + nextplatform.getWidth();
         TranslateTransition translateTransitionX = new TranslateTransition(Duration.millis(moveDuration), stickman);
         translateTransitionX.setToX(nextPlatformEndX - stickman.getFitWidth());
 
@@ -186,4 +186,38 @@ public class PlayingController {
         // Play the translation transition
         translateTransitionX.play();
     }
+//    public void transitionall(double dist,Runnable aftertransition){
+//        setscore();
+//        imhandle.update();
+//        for(Node i:pane.getChildren()){
+//            if(i.getClass().equals(Rectangle.class)){
+//                TranslateTransition t=new TranslateTransition(Duration.millis(1000), i);
+//                t.setByX(-dist);
+//                t.play();
+//                t.setOnFinished(e->{
+//                    if(transitioning){
+//                        transitioning=false;
+//                        aftertransition.run();
+//                    }
+//
+//
+//                });
+//                if(i!=s.getRect()){ //check if object is of platform class
+//                    Rectangle rect=(Rectangle)i;
+//                    // System.out.println("platform moved\n\n");
+//                    t.setOnFinished(event -> {
+//                        rect.setX(rect.getX() + rect.getTranslateX());
+//                        rect.setY(rect.getY() + rect.getTranslateY());
+//                        rect.setTranslateX(0);
+//                        rect.setTranslateY(0);
+//                    });
+//                }
+//            }
+//
+//
+//
+//        }
+//
+//
+//    }
 }
