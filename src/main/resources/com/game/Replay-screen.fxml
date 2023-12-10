@@ -26,23 +26,23 @@
             <Font name="Serif Italic" size="46.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="67.0" layoutY="151.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="202.0" />
-      <Label layoutX="139.0" layoutY="150.0" text="SCORE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="82.0" layoutY="151.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="202.0" />
+      <Label layoutX="178.0" layoutY="151.0" text="SCORE">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <Label layoutX="164.0" layoutY="181.0" text="2">
+      <Label fx:id="score" layoutX="210.0" layoutY="181.0" prefHeight="38.0" prefWidth="0.0">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="151.0" layoutY="214.0" prefHeight="32.0" prefWidth="54.0" text="BEST">
+      <Label layoutX="183.0" layoutY="214.0" prefHeight="32.0" prefWidth="54.0" text="BEST">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <Label layoutX="157.0" layoutY="246.0" text="12">
+      <Label layoutX="195.0" layoutY="246.0" text="12">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
@@ -57,5 +57,15 @@
             <Image url="@../../IMG/OIP1.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="90.0" layoutY="167.0">
+         <image>
+            <Image url="@../../IMG/cherry.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score1" layoutX="120.0" layoutY="220.0" prefHeight="38.0" prefWidth="0.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

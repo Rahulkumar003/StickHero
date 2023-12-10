@@ -39,7 +39,7 @@
          </image></ImageView>
       <ImageView fx:id="exitbutton" fitHeight="50.0" fitWidth="50.0" layoutX="271.0" layoutY="14.0" onMouseClicked="#gotoreplaymenu">
          <image>
-            <Image url="@../../IMG/1723876.png" />
+            <Image url="@../../IMG/button.png" />
          </image>
       </ImageView>
    </children>

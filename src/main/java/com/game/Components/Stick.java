@@ -11,7 +11,6 @@ public class Stick extends GameObject {
 
     public void extend(double amount) {
     }
-
     public double getHeight() {
         return y;
     }

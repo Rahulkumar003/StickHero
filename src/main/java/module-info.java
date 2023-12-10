@@ -3,6 +3,9 @@ module com.game.stichhero {
     requires javafx.fxml;
 
     requires com.dlsc.formsfx;
+    requires javafx.media;
+    requires junit;
+    requires org.testng;
 
     opens com.game to javafx.fxml;
     exports com.game;
