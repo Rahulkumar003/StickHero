@@ -1,5 +1,4 @@
 
-Stick Hero Game
 Stick Hero Game is a simple JavaFX game where players control a stickman to navigate through platforms and collect cherries.
 
 Open in IDE:
